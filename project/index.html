@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/loader.css" />
+    <title>Currency Converter</title>
+  </head>
+  <body>
+    <div class="loader" id="loader">
+      <div class="outer">
+        <div class="inner"></div>
+      </div>
+    </div>
+
+    <div class="main" id="main">
+      <div class="box">
+        <h2>Currency Converter</h2>
+        <form action="">
+          <div class="amount">
+            <div class="from">
+              <div class="flag-image" id="from-image"></div>
+              <div class="options-div">
+                <select name="" id="from" class="selects">
+                  <!--
+                    options will be created using javascript
+                  -->
+                </select>
+              </div>
+            </div>
+            <div class="amount-div">
+              <input
+                type="text"
+                id="Amount_input"
+                placeholder="Enter amount"
+                class="form_elements"
+              />
+              <div class="warning"><h6 id="text"></h6></div>
+            </div>
+          </div>
+
+          <div class="next-img"></div>
+
+          <div class="amount">
+            <div class="from">
+              <div class="flag-image" id="to-image"></div>
+              <div class="options-div">
+                <select name="" id="to" class="selects">
+                  <!--
+                    options will be created using javascript
+                  -->
+                </select>
+              </div>
+            </div>
+            <div class="amount-div">
+              <input type="text" class="form_elements" id="answer" />
+            </div>
+          </div>
+          <div style="text-align: center">
+            <button id="convert_button">Convert</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script>
+      let loading = document.getElementById("loader");
+      loading.style.display = "none";
+    </script>
+  </body>
+</html>

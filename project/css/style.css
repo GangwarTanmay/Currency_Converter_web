@@ -1,0 +1,223 @@
+body {
+  margin: 0px;
+}
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url("../images/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.box {
+  height: 380px;
+  width: 500px;
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+}
+
+.flag-image {
+  height: 33px;
+  width: 33px;
+  float: left;
+  border-radius: 50%;
+  margin-right: 5px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+#from-image {
+  background-image: url("https://flagsapi.com/IN/flat/64.png");
+}
+
+#to-image {
+  background-image: url("https://flagsapi.com/US/flat/64.png");
+}
+
+.form_elements {
+  height: 30px;
+  width: 350px;
+  border-radius: 5px;
+  font-size: large;
+  border: none;
+}
+
+.options-div {
+  float: right;
+  width: 50px;
+}
+
+.selects {
+  width: 50px;
+  height: 32px;
+  border-radius: 5px;
+  border: none;
+}
+
+.amount {
+  width: 90%;
+  height: 40px;
+  margin: auto;
+}
+
+.from {
+  float: left;
+}
+
+.amount-div {
+  float: right;
+}
+
+.warning {
+  height: 20px;
+  width: auto;
+  color: red;
+  text-align: start;
+}
+
+.warning h6 {
+  font-style: italic;
+  margin: 2px 0px 0px 0px;
+  animation: fadeout 3s;
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.next-img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  margin: 30px auto;
+  background-image: url("../images/next.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transform: rotate(90deg);
+}
+
+.animate {
+  animation: rotate 2s infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#convert_button {
+  background-color: #0b60b0;
+  color: white;
+  padding: 10px 12px;
+  border-radius: 5px;
+  margin: 25px auto;
+  border: 1px solid white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#convert_button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid #0b60b0;
+}
+
+@media screen and (max-width: 480px) and (min-width: 300px) {
+  .box {
+    height: 370px;
+    width: 300px;
+    padding: 10px;
+  }
+
+  .form_elements {
+    height: 30px;
+    width: 170px;
+  }
+  .next-img {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  .box {
+    height: 400px;
+    width: 400px;
+    padding: 20px;
+  }
+
+  .form_elements {
+    height: 35px;
+    width: 260px;
+  }
+  .next-img {
+    height: 45px;
+    width: 45px;
+  }
+  .flag-image {
+    height: 35px;
+    width: 35px;
+  }
+
+  .selects {
+    width: 50px;
+    height: 35px;
+  }
+  .box h2 {
+    margin: 35px auto;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .box {
+    height: 450px;
+    width: 450px;
+    padding: 20px;
+  }
+
+  .form_elements {
+    height: 40px;
+    width: 300px;
+  }
+  .next-img {
+    height: 45px;
+    width: 45px;
+  }
+
+  .selects {
+    width: 50px;
+    height: 40px;
+  }
+
+  .box h2 {
+    margin: 45px auto;
+  }
+}
