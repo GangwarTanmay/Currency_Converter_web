@@ -65,8 +65,10 @@
     </div>
     <script src="js/script.js"></script>
     <script>
-      let loading = document.getElementById("loader");
-      loading.style.display = "none";
+      window.onload = function () {
+        let loading = document.getElementById("loader");
+        loading.style.display = "none";
+      };
     </script>
   </body>
 </html>
